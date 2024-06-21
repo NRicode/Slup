@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="jquery.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<script src="summernote.min.js"></script>
+		<script src="note.js"></script>
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="summernote.min.css">
+
+	</head>
+
+<body style="background-color: rgb(15,15,15);">
+
+  <div id="summernote"></div>
+  <div style="display: flex; justify-content: center">
+    
+    <button style="font-size: 2em;" onclick="share()">Share</button>
+
+  </div>
+  
+  <script>
+    $(document).ready(function() {
+        $('#summernote').summernote({
+
+            focus: true,
+            fullscreen: true,
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', []]
+            ],
+
+        });
+
+    });
+  </script>
+</body>
+</html>
